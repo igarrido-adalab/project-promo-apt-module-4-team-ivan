@@ -81,7 +81,7 @@ function App() {
       photo: "", // Foto de la autora
       image: "", // Foto del proyecto
     };
-    fetch('http://localhost:4000/api/projectCard',
+    fetch('/api/projectCard',
     {
       method: 'POST',
       body: JSON.stringify(data),
