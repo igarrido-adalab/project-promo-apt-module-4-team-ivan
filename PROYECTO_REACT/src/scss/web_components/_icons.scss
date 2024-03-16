@@ -1,0 +1,21 @@
+@import "../core/variables";
+
+/* ICONS */
+
+.icon {
+  width: 1.6rem;
+  height: 1.6rem;
+  color: transparent;
+  cursor: pointer;
+  border-radius: 50%;
+  box-shadow: 0 0 5px 0 $color-greyish-brown-two;
+
+  &__www {
+    background-image: url("./web_components/icons/globe-solid.svg");
+    /* Ruta relativa a donde se hace el import por una issue de Sass/Vite: <https://github.com/vitejs/vite/issues/7651> */
+  }
+
+  &__github {
+    background-image: url("./web_components/icons/github.svg");
+  }
+}
