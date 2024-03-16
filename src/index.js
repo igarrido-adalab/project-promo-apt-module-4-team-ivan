@@ -11,7 +11,7 @@ require('dotenv').config();
 // CREAR VARIABLES
 
 const app = express();
-const port = 4000;
+const port = process.env.PORT || 4000;
 
 // CONFIGURACIÓN
 
@@ -156,5 +156,5 @@ app.get('/projectCard/:id', async (req, res) => {
 
 // DEFINIR SERVIDORES ESTÁTICOS
 
-const staticServerPathWeb = '../public'; // En esta carpeta (en la raíz del proy) ponemos los ficheros estáticos
+const staticServerPathWeb = '../public-react'; // En esta carpeta (en la raíz del proy) ponemos los ficheros estáticos
 app.use(express.static(path.join(__dirname, staticServerPathWeb)));

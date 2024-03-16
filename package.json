@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "dev": "npx nodemon src/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node src/index.js",
+    "publish-react": "cd PROYECTO_REACT && npm run build && cd .. && rm -rf public-react ; mv PROYECTO_REACT/dist public-react",
+    "deploy":        "cd PROYECTO_REACT && npm run build && cd .. && rm -rf public-react ; mv PROYECTO_REACT/dist public-react"
   },
   "author": "",
   "license": "ISC",
